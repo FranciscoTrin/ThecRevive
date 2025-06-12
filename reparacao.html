@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Techrevive | Serviço de Reparação</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="icon" type="image/png" href="TechRevive.png" sizes="192x192" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo-wrapper">
+          <img src="TechRevive.png" alt="Techrevive Logo" class="logo-img" />
+          <h1 class="logo-text">Techrevive</h1>
+        </div>
+        <nav>
+          <div class="menu-toggle" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+          </div>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="reparacao.html" class="active">Reparação</a></li>
+            <li><a href="recolha.html">Recolha</a></li>
+            <li><a href="venda.html">Venda/Compra</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li>
+              <a href="index.html#contactos" class="btn-contact">Contactos</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="page-hero">
+      <div class="container">
+        <h1>Serviço de Reparação Profissional</h1>
+        <p>Devolvemos a vida ao seu equipamento com qualidade garantida</p>
+      </div>
+    </section>
+
+    <section id="reparacao-passos" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>O Nosso Processo de Reparação</h2>
+          <p class="section-description">Simples, rápido e transparente.</p>
+        </div>
+        <div class="service-steps">
+          <div class="step">
+            <div class="step-icon"><i class="fas fa-pen-to-square"></i></div>
+            <h3>1. Pedido</h3>
+            <p>
+              Preencha o formulário e descreva o problema do seu equipamento.
+            </p>
+          </div>
+          <div class="step">
+            <div class="step-icon"><i class="fas fa-truck"></i></div>
+            <h3>2. Recolha</h3>
+            <p>Agendamos a recolha gratuita em sua casa ou na sua empresa.</p>
+          </div>
+          <div class="step">
+            <div class="step-icon"><i class="fas fa-search"></i></div>
+            <h3>3. Diagnóstico</h3>
+            <p>
+              Realizamos uma análise completa e enviamos um orçamento gratuito.
+            </p>
+          </div>
+          <div class="step">
+            <div class="step-icon"><i class="fas fa-tools"></i></div>
+            <h3>4. Reparação</h3>
+            <p>
+              Após a sua aprovação, reparamos o equipamento com peças de
+              qualidade.
+            </p>
+          </div>
+          <div class="step">
+            <div class="step-icon"><i class="fas fa-box-open"></i></div>
+            <h3>5. Entrega</h3>
+            <p>
+              Devolvemos o seu equipamento reparado, testado e com garantia.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark">
+      <div class="container">
+        <div class="section-header">
+          <h2>Marque a Reparação do Seu Equipamento</h2>
+          <p class="section-description">
+            Preencha os campos abaixo para iniciar o processo.
+          </p>
+        </div>
+        <form
+          action="https://formsubmit.co/abcd@techrevive.pt"
+          method="POST"
+          class="repair-form"
+        >
+          <input
+            type="hidden"
+            name="_subject"
+            value="Pedido de Reparação - Techrevive"
+          />
+          <input
+            type="hidden"
+            name="_next"
+            value="https://seusite.com/obrigado.html"
+          />
+
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="name">Nome Completo*</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="O seu nome"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email*</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="O seu email de contacto"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Telemóvel*</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="O seu número de telemóvel"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="equipment">Equipamento a Reparar*</label>
+              <select id="equipment" name="equipment" required>
+                <option value="" disabled selected>
+                  Selecione um equipamento...
+                </option>
+                <option value="Bimby">Bimby</option>
+                <option value="Monsieur Cuisine">Monsieur Cuisine</option>
+                <option value="Robot de Cozinha">Outro Robot de Cozinha</option>
+                <option value="Aspirador Robot">Aspirador Robot</option>
+                <option value="Computador Portátil">Computador Portátil</option>
+                <option value="Computador Desktop">Computador Desktop</option>
+                <option value="Telemóvel">Telemóvel</option>
+                <option value="Tablet">Tablet</option>
+                <option value="Outro">Outro</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="brand">Marca e Modelo*</label>
+            <input
+              type="text"
+              id="brand"
+              name="brand"
+              placeholder="Ex: Apple iPhone 13 Pro"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="problem">Descreva o Problema*</label>
+            <textarea
+              id="problem"
+              name="problem"
+              rows="4"
+              placeholder="Descreva detalhadamente a avaria ou o problema que o equipamento apresenta."
+              required
+            ></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="address">Morada para Recolha*</label>
+            <textarea
+              id="address"
+              name="address"
+              rows="3"
+              placeholder="A sua morada completa para agendarmos a recolha."
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary">Solicitar Reparação</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-about">
+            <div class="logo-wrapper">
+              <img
+                src="TechRevive.png"
+                alt="Techrevive Logo"
+                class="logo-img"
+              />
+              <h2 class="logo-text">Techrevive</h2>
+            </div>
+            <p>
+              Especialistas em recondicionamento tecnológico com qualidade
+              garantida.
+            </p>
+          </div>
+          <div class="footer-links">
+            <h3>Links Rápidos</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="reparacao.html">Reparação</a></li>
+              <li><a href="recolha.html">Recolha</a></li>
+              <li><a href="venda.html">Venda/Compra</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="footer-social">
+            <h3>Siga-nos</h3>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Techrevive. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        const nav = document.getElementById("navLinks");
+        nav.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>

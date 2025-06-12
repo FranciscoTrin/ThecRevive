@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Techrevive | Recondicionamento Tecnológico</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link rel="icon" type="image/png" href="TechRevive.png" sizes="192x192" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo-wrapper">
+          <img src="TechRevive.png" alt="Techrevive Logo" class="logo-img" />
+          <h1 class="logo-text">Techrevive</h1>
+        </div>
+        <nav>
+          <div class="menu-toggle" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+          </div>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="reparacao.html">Reparação</a></li>
+            <li><a href="recolha.html">Recolha</a></li>
+            <li><a href="venda.html">Venda/Compra</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="#contactos" class="btn-contact">Contactos</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Recondicionamento Tecnológico Profissional</h1>
+        <p class="subtitle">
+          Damos nova vida aos seus equipamentos eletrónicos com qualidade
+          garantida
+        </p>
+        <div class="hero-buttons">
+          <a href="reparacao.html" class="btn-primary">Reparar Equipamento</a>
+          <a href="venda.html" class="btn-secondary">Comprar Recondicionados</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Sobre Nós</h2>
+          <p class="section-description">
+            Conheça a Techrevive e a nossa missão
+          </p>
+        </div>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              A Techrevive é especialista em recondicionamento de equipamentos
+              eletrónicos, oferecendo soluções completas para prolongar a vida
+              útil dos seus dispositivos.
+            </p>
+            <p>
+              Trabalhamos com computadores, consolas, smartphones, robôs de
+              cozinha e aspiradores inteligentes, garantindo sempre os mais
+              altos padrões de qualidade.
+            </p>
+            <ul class="features-list">
+              <li>
+                <i class="fas fa-check-circle"></i> Equipa técnica especializada
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Peças originais e
+                certificadas
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Garantia em todos os
+                serviços
+              </li>
+            </ul>
+          </div>
+          <div class="about-image">
+            <img src="Eletronicos.jpg" alt="Técnico a reparar equipamento" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicos" class="section dark">
+      <div class="container">
+        <div class="section-header">
+          <h2>Nossos Serviços</h2>
+          <p class="section-description">
+            Soluções completas para o seu equipamento
+          </p>
+        </div>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-search"></i>
+            </div>
+            <h3>Diagnóstico Técnico</h3>
+            <p>
+              Identificamos falhas e avaliamos o estado geral do equipamento com
+              equipamentos especializados.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-tools"></i>
+            </div>
+            <h3>Reparação Profissional</h3>
+            <p>
+              Substituição de peças com qualidade certificada e garantia de
+              fiabilidade no serviço.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-sync-alt"></i>
+            </div>
+            <h3>Atualizações</h3>
+            <p>
+              Instalação de sistemas, limpeza interna e otimização de desempenho
+              do equipamento.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="equipamentos" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Equipamentos Recondicionados</h2>
+          <p class="section-description">
+            Trabalhamos com uma vasta gama de equipamentos e as melhores marcas
+            do mercado
+          </p>
+        </div>
+        <div class="equipment-grid">
+          <div class="equipment-card">
+            <img src="Computador.jpg" alt="Computador" />
+            <div class="equipment-card-content">
+              <h3>Computadores</h3>
+              <p>Recondicionamento de portáteis e desktops de várias marcas.</p>
+            </div>
+          </div>
+          <div class="equipment-card">
+            <img src="Bimby.jpg" alt="Robô de Cozinha" />
+            <div class="equipment-card-content">
+              <h3>Robôs de Cozinha</h3>
+              <p>Serviço especializado para robôs de cozinha de alta gama.</p>
+            </div>
+          </div>
+          <div class="equipment-card">
+            <img src="Aspirador.jpg" alt="Aspirador Inteligente" />
+            <div class="equipment-card-content">
+              <h3>Aspiradores Inteligentes</h3>
+              <p>
+                Recondicionamos as principais marcas de aspiradores robóticos.
+              </p>
+            </div>
+          </div>
+          <div class="equipment-card">
+            <img src="Telemovel.jpg" alt="Telemóvel" />
+            <div class="equipment-card-content">
+              <h3>Telemóveis</h3>
+              <p>Reparação e recondicionamento de smartphones e tablets.</p>
+            </div>
+          </div>
+          <div class="equipment-card-more">
+            <div class="more-icon">
+              <i class="fas fa-plus"></i>
+            </div>
+            <h3>E muitos outros</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contactos" class="section contact-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Contacte-nos</h2>
+          <p class="section-description">
+            Estamos disponíveis para esclarecer as suas dúvidas
+          </p>
+        </div>
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-phone-alt"></i>
+            <h3>Telefone</h3>
+            <p>012 345 6789</p>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <h3>Email</h3>
+            <p>abcd@techrevive.pt</p>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>Morada</h3>
+            <p>6789-000, Portugal</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-about">
+            <div class="logo-wrapper">
+              <img
+                src="TechRevive.png"
+                alt="Techrevive Logo"
+                class="logo-img"
+              />
+              <h2 class="logo-text">Techrevive</h2>
+            </div>
+            <p>
+              Especialistas em recondicionamento tecnológico com qualidade
+              garantida.
+            </p>
+          </div>
+          <div class="footer-links">
+            <h3>Links Rápidos</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="reparacao.html">Reparação</a></li>
+              <li><a href="recolha.html">Recolha</a></li>
+              <li><a href="venda.html">Venda/Compra</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="footer-social">
+            <h3>Siga-nos</h3>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Techrevive. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        const nav = document.getElementById("navLinks");
+        nav.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
